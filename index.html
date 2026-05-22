@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javi Riveros — Product Designer</title>
+    <meta name="description" content="Diseñadora de productos digitales que transforma problemas complejos en experiencias simples, intuitivas y humanas.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo">javi ✦</a>
+        <div class="nav-links" id="navLinks">
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-bg" aria-hidden="true">
+            <div class="blob b1"></div>
+            <div class="blob b2"></div>
+            <div class="blob b3"></div>
+        </div>
+        <div class="hero-content">
+            <span class="eyebrow">Product Designer · Chile 🌿</span>
+            <h1>Hola,<br>Soy <em>Javi</em></h1>
+            <p>Diseñadora de productos digitales que transforma problemas complejos en experiencias simples, intuitivas y, sobre todo, <strong>humanas</strong>.</p>
+            <div class="hero-actions">
+                <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+                <a href="#contacto" class="btn btn-ghost">Hablemos →</a>
+            </div>
+        </div>
+        <span class="scroll-hint" aria-hidden="true">scroll ↓</span>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-photo reveal">
+                    <div class="photo-frame">
+                        <!-- Reemplaza este div con <img src="tu-foto.jpg" alt="Javi Riveros"> -->
+                        <div class="photo-initials">JR</div>
+                    </div>
+                    <div class="photo-deco" aria-hidden="true"></div>
+                </div>
+                <div class="about-body">
+                    <span class="section-label reveal">Sobre mí</span>
+                    <h2 class="reveal reveal-delay-1">Diseño que <em>conecta</em></h2>
+                    <p class="reveal reveal-delay-2">Me apasiona crear productos que conecten de verdad con las personas, y disfruto cada paso del proceso creativo. Soy fan de los sistemas de diseño, la gamificación y hacer que la tecnología se sienta natural y divertida.</p>
+                    <p class="reveal reveal-delay-2">Y sí, también levanto pesas, veo anime y me emociona descubrir nuevos pájaros en mis paseos 🐦</p>
+                    <p class="about-highlight reveal reveal-delay-3">Hoy diseño desde Chile, colaborando con equipos globales para convertir ideas ambiciosas en experiencias digitales que realmente impactan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="section section-alt">
+        <div class="container">
+            <span class="section-label reveal">Habilidades</span>
+            <h2 class="reveal reveal-delay-1">Lo que hago bien</h2>
+            <div class="skills-grid">
+                <div class="skill-card reveal" style="--c: #7C3AED">
+                    <div class="skill-icon">✦</div>
+                    <span>Design System</span>
+                </div>
+                <div class="skill-card reveal reveal-delay-1" style="--c: #EC4899">
+                    <div class="skill-icon">◈</div>
+                    <span>Digital Design</span>
+                </div>
+                <div class="skill-card reveal reveal-delay-2" style="--c: #F59E0B">
+                    <div class="skill-icon">◎</div>
+                    <span>Innovation</span>
+                </div>
+                <div class="skill-card reveal reveal-delay-1" style="--c: #06D6A0">
+                    <div class="skill-icon">⬡</div>
+                    <span>User Experience</span>
+                </div>
+                <div class="skill-card reveal reveal-delay-2" style="--c: #3B82F6">
+                    <div class="skill-icon">⊕</div>
+                    <span>Research</span>
+                </div>
+                <div class="skill-card reveal reveal-delay-3" style="--c: #EF4444">
+                    <div class="skill-icon">⟳</div>
+                    <span>Metodologías Ágiles</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="section">
+        <div class="container">
+            <span class="section-label reveal">Proyectos</span>
+            <h2 class="reveal reveal-delay-1">Mi trabajo</h2>
+            <div class="projects-grid">
+
+                <article class="project-card reveal" style="--accent: #7C3AED; --accent-light: #EDE9FE; --accent-mid: #DDD6FE">
+                    <div class="project-thumb">
+                        <div class="project-tags">
+                            <span class="tag">UX/UI</span>
+                            <span class="tag">Design System</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">Vida Cámara · 2024 · Chile</div>
+                        <h3>Construyendo un Sistema de Diseño</h3>
+                        <p>Un Design System que unifica procesos, optimiza tiempos y mejora la colaboración entre diseño y desarrollo.</p>
+                        <div class="project-stats">
+                            <span class="stat">90% adopción</span>
+                            <span class="stat">30–40% menos tiempo</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal reveal-delay-1" style="--accent: #EC4899; --accent-light: #FCE7F3; --accent-mid: #FBCFE8">
+                    <div class="project-thumb">
+                        <div class="project-tags">
+                            <span class="tag">UX/UI</span>
+                            <span class="tag wip">WIP</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">Minta · 2025 · España</div>
+                        <h3>Redefiniendo el Acceso a la Salud Mental</h3>
+                        <p>Plataforma en desarrollo para simplificar el acceso a la salud mental de los jóvenes con herramientas digitales simples y personalizadas.</p>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" style="--accent: #F59E0B; --accent-light: #FEF3C7; --accent-mid: #FDE68A">
+                    <div class="project-thumb">
+                        <div class="project-tags">
+                            <span class="tag">UX/UI</span>
+                            <span class="tag">Mobile</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">Vida Cámara · 2024 · Chile</div>
+                        <h3>Nuevo flujo de reembolso</h3>
+                        <p>Rediseño estratégico del flujo de reembolso para mejorar la experiencia del usuario y optimizar los procesos internos.</p>
+                        <div class="project-stats">
+                            <span class="stat">−15% rechazos</span>
+                            <span class="stat">+10% satisfacción</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal reveal-delay-1" style="--accent: #06D6A0; --accent-light: #D1FAE5; --accent-mid: #A7F3D0">
+                    <div class="project-thumb">
+                        <div class="project-tags">
+                            <span class="tag">UX/UI</span>
+                            <span class="tag">Gamificación</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">Betterfly · 2022 · Chile</div>
+                        <h3>Redefiniendo los hábitos saludables</h3>
+                        <p>Plataforma gamificada para promover hábitos saludables y aumentar el compromiso de los usuarios.</p>
+                        <div class="project-stats">
+                            <span class="stat">+6.4% usuarios activos</span>
+                            <span class="stat">408 colaboradores</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card project-card-wide reveal" style="--accent: #3B82F6; --accent-light: #DBEAFE; --accent-mid: #BFDBFE">
+                    <div class="project-thumb">
+                        <div class="project-tags">
+                            <span class="tag">Website</span>
+                            <span class="tag">Fintech</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">Atipicus · 2025 · Chile</div>
+                        <h3>Atipicus</h3>
+                        <p>Web para Atipicus, un Product Studio enfocado en Fintech, Seguros e Inteligencia artificial.</p>
+                        <a href="https://atipic.us/" target="_blank" rel="noopener noreferrer" class="project-link">Ver sitio →</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section section-contact">
+        <div class="container">
+            <div class="contact-inner reveal">
+                <span class="section-label light">¿Hablamos?</span>
+                <h2>¿Trabajamos<br><em>juntas</em>?</h2>
+                <p>Siempre estoy abierta a nuevos proyectos, colaboraciones o simplemente una buena charla sobre diseño.</p>
+                <a href="mailto:riveros.oltra@gmail.com" class="btn btn-white">riveros.oltra@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>Diseñado por <strong>Javi Riveros</strong> · 2025</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
