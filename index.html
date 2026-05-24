@@ -24,26 +24,26 @@
         </button>
     </nav>
 
-    <!-- HERO -->
+    <!-- HERO: hard split panel -->
     <section id="hero">
-        <div class="hero-inner">
-            <div class="hero-text">
-                <p class="hero-role">Product Designer · Chile 🌿</p>
-                <h1><span class="name-first">Javi</span><br><span class="name-last">Riveros</span></h1>
-                <div class="hero-bottom">
-                    <p class="hero-bio">Transformo problemas complejos en experiencias digitales simples, intuitivas y humanas. Diseño desde Chile para equipos globales.</p>
-                    <div class="hero-cta">
-                        <a href="#trabajo" class="cta-primary">Ver proyectos</a>
-                        <a href="#contacto" class="cta-ghost">Contacto →</a>
-                    </div>
+        <div class="hero-panel-l">
+            <p class="hero-role">Product Designer · Chile 🌿</p>
+            <div class="hero-name-l">Javi</div>
+            <div class="hero-bottom">
+                <p class="hero-bio">Transformo problemas complejos en experiencias digitales simples, intuitivas y humanas. Diseño desde Chile para equipos globales.</p>
+                <div class="hero-cta">
+                    <a href="#trabajo" class="cta-primary">Ver proyectos</a>
+                    <a href="#contacto" class="cta-ghost">Contacto →</a>
                 </div>
             </div>
-            <div class="hero-photo">
-                <div class="hero-photo-frame">
-                    <!-- Reemplaza con: <img src="javi.jpg" alt="Javi Riveros"> -->
-                    <span class="frame-hint">Tu foto aquí</span>
-                </div>
+        </div>
+        <div class="hero-panel-r">
+            <div class="hero-photo-wrap">
+                <!-- Reemplaza con: <img src="javi.jpg" alt="Javi Riveros">
+                     Luego elimina el span.photo-hint -->
+                <span class="photo-hint">Tu foto aquí</span>
             </div>
+            <div class="hero-name-r">Riveros</div>
         </div>
     </section>
 
@@ -68,9 +68,12 @@
     </div>
 
     <!-- TRABAJO -->
-    <section id="trabajo" class="section">
-        <div class="container">
-            <h2 class="section-pill">Trabajo</h2>
+    <section id="trabajo">
+        <div class="section-bar">
+            <h2 class="section-bar-label">Trabajo</h2>
+            <span class="section-count">05</span>
+        </div>
+        <div class="container section-content">
             <div class="work-grid">
 
                 <article class="work-card work-card-featured reveal">
@@ -171,21 +174,24 @@
         </div>
     </section>
 
-    <!-- SOBRE MÍ -->
-    <section id="sobre-mi" class="section section-alt">
-        <div class="container">
-            <div class="about-layout">
-                <div class="about-photo reveal">
-                    <div class="photo-wrap">
-                        <!-- Reemplaza con: <img src="javi-foto.jpg" alt="Javi Riveros"> -->
-                        <span class="photo-initials">JR</span>
-                    </div>
+    <!-- SOBRE MÍ: hard split panel -->
+    <section id="sobre-mi">
+        <div class="section-bar">
+            <h2 class="section-bar-label">Sobre mí</h2>
+        </div>
+        <div class="about-layout">
+            <div class="about-panel-photo reveal">
+                <div class="photo-wrap">
+                    <!-- Reemplaza con: <img src="javi-foto.jpg" alt="Javi Riveros">
+                         Luego elimina el span.photo-initials -->
+                    <span class="photo-initials">JR</span>
                 </div>
-                <div class="about-content">
-                    <h2 class="reveal">Sobre mí</h2>
-                    <p class="reveal reveal-delay-1">Me apasiona crear productos que conecten de verdad con las personas. Soy fan de los sistemas de diseño y la gamificación: me encanta construir estructuras que escalen y experiencias que enganchen.</p>
+            </div>
+            <div class="about-panel-content">
+                <div class="about-text">
+                    <p class="reveal">Me apasiona crear productos que conecten de verdad con las personas. Soy fan de los sistemas de diseño y la gamificación: me encanta construir estructuras que escalen y experiencias que enganchen.</p>
                     <p class="reveal reveal-delay-1">Diseño desde Chile, colaborando con equipos globales para convertir ideas ambiciosas en experiencias digitales que realmente impactan.</p>
-                    <div class="skills-tags reveal reveal-delay-2">
+                    <div class="skills-tags reveal reveal-delay-1">
                         <span>Design System</span>
                         <span>Digital Design</span>
                         <span>Innovation</span>
