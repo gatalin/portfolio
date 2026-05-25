@@ -316,32 +316,36 @@ p { color: var(--muted); line-height: 1.75; }
 #trabajo { background: var(--cream); }
 .section-content { padding-block: 3.5rem 5rem; }
 
+/* --- Bento grid: 3 equal columns --- */
 .work-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
 }
+
+/* Card shell */
 .work-card {
-  border-radius: 20px;
+  border-radius: 18px;
   overflow: hidden;
   background: var(--cream-2);
-  border: 1.5px solid var(--line);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition: transform 0.35s ease;
 }
-.work-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 52px oklch(13% 0.01 30 / 0.10);
-}
+.work-card:hover { transform: translateY(-5px); }
 .work-card > a { display: block; }
-.work-card-featured { grid-column: span 2; }
 
+/* Layout variants */
+.work-card-featured { grid-column: 1 / -1; }   /* row 1: full width */
+.work-card-wide     { grid-column: span 2; }     /* rows 2–3: wide slot */
+
+/* Color block */
 .card-media {
   background: var(--ph, var(--cream-2));
-  height: 280px;
+  height: 260px;
   overflow: hidden;
   position: relative;
 }
 .work-card-featured .card-media { height: 400px; }
+
 .card-media img {
   position: absolute;
   inset: 0;
@@ -349,42 +353,71 @@ p { color: var(--muted); line-height: 1.75; }
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.5s ease;
+  transition: transform 0.55s ease;
 }
 .work-card:hover .card-media img { transform: scale(1.04); }
 
-.card-meta { padding: 1.35rem 1.5rem; }
+/* Tags: floating pill overlay top-left of color block */
 .card-tags {
+  position: absolute;
+  top: 1.1rem;
+  left: 1.1rem;
   display: flex;
-  gap: 0.45rem;
+  gap: 0.4rem;
   flex-wrap: wrap;
-  margin-bottom: 0.7rem;
+  z-index: 2;
 }
 .card-tags span {
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: var(--muted);
-  background: var(--cream);
-  border: 1px solid var(--line);
-  padding: 0.18rem 0.6rem;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--dark);
+  background: oklch(97% 0.015 78 / 0.88);
+  padding: 0.22rem 0.65rem;
   border-radius: 100px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .tag-wip {
   color: var(--red) !important;
-  border-color: var(--red-lt) !important;
-  background: var(--red-lt) !important;
+  background: oklch(97% 0.03 25 / 0.90) !important;
 }
+
+/* Circular arrow button: bottom-right of color block */
+.card-arrow {
+  position: absolute;
+  bottom: 1.1rem;
+  right: 1.1rem;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--cream);
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  z-index: 2;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+.work-card:hover .card-arrow {
+  background: var(--yellow);
+  transform: scale(1.1);
+}
+
+/* Meta: clean text block below color */
+.card-meta { padding: 1.15rem 1.35rem 1.4rem; }
 .card-footer-row {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
   gap: 0.4rem;
-  margin-top: 0.5rem;
+  margin-top: 0.45rem;
 }
-.card-client { font-size: 0.76rem; color: var(--muted); }
-.card-metrics { font-size: 0.73rem; font-weight: 600; color: var(--red); }
+.card-client { font-size: 0.75rem; color: var(--muted); }
+.card-metrics { font-size: 0.72rem; font-weight: 600; color: var(--red); }
 
 /* === REVEAL === */
 .reveal {
@@ -569,8 +602,10 @@ footer p { font-size: 0.78rem; color: oklch(40% 0.007 30); max-width: none; }
 
   /* Work: single column */
   .work-grid { grid-template-columns: 1fr; }
-  .work-card-featured { grid-column: span 1; }
-  .work-card-featured .card-media { height: 280px; }
+  .work-card-featured,
+  .work-card-wide { grid-column: span 1; }
+  .work-card-featured .card-media,
+  .work-card-wide .card-media { height: 260px; }
 
   /* About: stack panels */
   .about-layout {
