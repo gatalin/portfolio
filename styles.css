@@ -2,12 +2,12 @@
 :root {
   --cream:      oklch(96% 0.022 78);
   --cream-2:    oklch(91% 0.028 78);
-  --yellow:     oklch(88% 0.155 85);
-  --yellow-dk:  oklch(72% 0.16 85);
-  --blue:       oklch(51% 0.22 248);
-  --blue-lt:    oklch(84% 0.09 248);
-  --red:        oklch(57% 0.24 25);
-  --red-lt:     oklch(94% 0.04 25);
+  --yellow:     oklch(93% 0.144 100);   /* #fdea6f */
+  --yellow-dk:  oklch(74% 0.16  100);
+  --blue:       oklch(51% 0.108 236);   /* #036d9a */
+  --blue-lt:    oklch(79% 0.065 236);
+  --red:        oklch(54% 0.22  29);    /* #cf0000 */
+  --red-lt:     oklch(94% 0.04  29);
   --dark:       oklch(13% 0.010 30);
   --text:       oklch(16% 0.012 30);
   --muted:      oklch(44% 0.012 30);
@@ -569,7 +569,7 @@ dd { font-size: 0.87rem; color: var(--text); line-height: 1.5; }
   width: fit-content;
   margin-top: 0.75rem;
   padding-bottom: 3px;
-  border-bottom: 1.5px solid oklch(62% 0.14 248);
+  border-bottom: 1.5px solid oklch(62% 0.09 236);
   transition: border-color 0.2s, color 0.2s;
 }
 .contact-email:hover { border-color: var(--cream); color: var(--yellow); }
